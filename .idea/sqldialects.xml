@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/SQLFillers/credit_cards.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/customers.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/genres.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/genres_in_movies.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/movies.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/ratings.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/sales.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/stars_in_movies.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQLFillers/starsv3.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/createtable.sql" dialect="MySQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/cs122b_spring_cs_122b_flicks_the_sql_war/styles/styles.css">
+    <title>Employee Login</title>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+<h1>Welcome to the Employee Login!</h1>
+<div class="login-body">
+    <div class="login-container">
+        <div class="login-header">
+            <p class="login-title">Welcome!</p>
+            <p class="login-subtitle">Login</p>
+        </div>
+        <form id="employeeLoginForm" name="employeeLoginForm" method="post">
+            <div class="form-group custom-form-group">
+                <label for="username"><b>Username</b></label>
+                <input id="username" name="email" type="text" class="form-control custom-input" required>
+            </div>
+            <div>
+                <label for="password"><b>Password</b></label>
+                <input id="password" name="password" type="password" class="form-control custom-input" required>
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="6Ld2O9YsAAAAAPV1Beqxg4JALIWLyg-U6onWze40"></div>
+
+            <p id="login-error-message" class="error-message"></p>
+            <div class="text-center mt-4">
+                <button type="button" id="loginButton" class="custom-submit-but">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="/cs122b_spring_cs_122b_flicks_the_sql_war/_dashboard/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=LB9
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=fid, value=null
+Inconsistency: element=t, value=null
+Inconsistency: element=t, value=null
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=WS45
+Inconsistency: element=t, value=null
+Inconsistency (not a valid integer): element=year, value=199x, skipping fid=AS22
+Inconsistency (not a valid integer): element=year, value=199x, skipping fid=AS32
+Inconsistency: element=t, value=null
+Inconsistency: element=t, value=null
+Inconsistency: element=t, value=null
+Inconsistency (not a valid integer): element=year, value=199x, skipping fid=RHd2
+Inconsistency (not a valid integer): element=year, value=199x, skipping fid=IAv12
+Inconsistency (not a valid integer): element=year, value=196x, skipping fid=MS0
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=WiW30
+Inconsistency: element=cat, value=null, fid=SRi19
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=DLy25
+Inconsistency: element=t, value=empty
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=AEy13
+Inconsistency: element=dirname, value=null
+Inconsistency: element=dirname, value=null
+Inconsistency: element=t, value=null
+Inconsistency (not a valid integer): element=year, value=199x, skipping fid=CsS15
+Inconsistency: element=fid, value=empty
+Inconsistency: element=t, value=null
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=TdC13
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=Z9590
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=AbK15
+Inconsistency (not a valid integer): element=year, value=19yy, skipping fid=MJu15
+Inconsistency: element=dirname, value=null
+Inconsistency: element=dirname, value=null
+Inconsistency: element=dirname, value=null
+Inconsistency: element=dirname, value=null
+Inconsistency: element=dirname, value=null

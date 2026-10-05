@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Movie List</title>
+</head>
+<body>
+<h1>Top Movies</h1>
+
+<button type="button" onclick="window.location.href='shopping_cart.html'" class="nav-button">
+    <i class="fa-solid fa-cart-shopping"></i> Checkout
+</button>
+
+<div class="container mb-4">
+    <form id="search-form" method="GET" action="movie_list.html">
+        <input type="text" id="general-search-box" placeholder="Search a title"/>
+        <button type="submit" class="page-button" id="search-btn">Search</button>
+    </form>
+
+</div>
+
+<!-- Search -->
+<div class="container mb-4">
+    <form action="movie_list.html" method="GET">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" name="title" placeholder="Title">
+                <p id="currently-searching-title" class="current-search"></p>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="year" placeholder="Year">
+                <p id="currently-searching-year" class="current-search"></p>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="director" placeholder="Director">
+                <p id="currently-searching-director" class="current-search"></p>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="star" placeholder="Star">
+                <p id="currently-searching-star" class="current-search"></p>
+            </div>
+            <div class="col">
+                <button type="submit" class="page-button">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<h3 id="movie_info"></h3>
+<div class="sort-container">
+    <span>Sort by: </span>
+<!--    <button class="sort-button" onclick="toggleSort('title')">-->
+<!--        Title <i id="titleIcon" class="fa-solid fa-sort-up"></i>-->
+<!--    </button>-->
+<!--    <button class="sort-button" onclick="toggleSort('rating')">-->
+<!--        Rating <i id="ratingIcon" class="fa-solid fa-sort-down"></i>-->
+<!--    </button>-->
+    <div>
+        <select id="first-sort">
+            <option value="title">Title</option>
+            <option value="rating">Rating</option>
+        </select>
+        <input type="radio" name="first-order" value="ASC" checked> <i class="fa-solid fa-sort-up"></i>
+        <input type="radio" name="first-order" value="DESC"> <i class="fa-solid fa-sort-down"></i>
+    </div>
+    <div>
+        <span>then by: </span>
+        <select id="second-sort">
+            <option value="rating">Rating</option>
+            <option value="title">Title</option>
+        </select>
+        <input type="radio" name="second-order" value="ASC" checked> <i class="fa-solid fa-sort-up"></i>
+        <input type="radio" name="second-order" value="DESC"> <i class="fa-solid fa-sort-down"></i>
+    </div>
+
+    <button onclick="applyMultiSort()" class="sort-button">Sort</button>
+
+    <label for="limit_input" class="limit-label">Results per page:</label>
+    <select id="limit_input" class="limit-input">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+</div>
+<div class="table-hover">
+    <table id="movie_table" class="table table-striped">
+        <thead>
+        <tr>
+            <th>Movie Title</th>
+            <th>Release Year</th>
+            <th>Director</th>
+            <th>Rating</th>
+            <th>Genres</th>
+            <th>Stars</th>
+            <th>Cart</th>
+        </tr>
+        </thead>
+
+        <!-- Table body is left empty here, will be populated with the data retrieved with movie_list.js -->
+        <tbody id="movie_table_body"></tbody>
+    </table>
+</div>
+
+<!-- Pagination -->
+<div class="pagination-container">
+    <button id="prev_button" class="page-button">Previous</button>
+
+    <!-- Page number -->
+    <span id="page_display" class="page-display"></span>
+
+    <button id="next_button" class="page-button">Next</button>
+</div>
+
+<div class="browse-dashboard">
+    <div class="browse-section">
+        <h3>Browse by Genre</h3>
+        <div id="genre-container" class="genre-grid">
+        </div>
+    </div>
+
+    <div class="browse-section">
+        <h3>Browse by Title</h3>
+        <div id="alphabet-container" class="alphabet-grid">
+        </div>
+    </div>
+</div>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to movie_list.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="movie_list.js"></script>
+</body>
+
+
+</html>

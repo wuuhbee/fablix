@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/cs122b_spring_cs_122b_flicks_the_sql_war/styles/styles.css">
+  <title>Employee Dashboard</title>
+</head>
+<body>
+<h1>Welcome to the Employee Dashboard!</h1>
+<div class="add-container">
+    <div class="login-container">
+        <p class="login-title">Add a Star</p>
+        <form id="addStarForm" name="addStarForm" method="post">
+            <div class="form-group custom-form-group">
+              <label for="fullName">Name:</label>
+              <input id="fullName" name="fullName" type="text" required>
+            </div>
+            <div class="form-group custom-form-group">
+              <label for="birthYear">Birth Year:</label>
+              <input id="birthYear" name="birthYear" type="number">
+            </div>
+            <input type="submit" value="Add Star">
+            <p id="success-message" class="success-message"></p>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+    <div class="login-container">
+        <p class="login-title"> Add a Movie</p>
+        <form id="addMovieForm" name="addMovieForm" method="post">
+            <div class="form-group custom-form-group">
+                <label for="title">Title:</label>
+                <input id="title" name="title" type="text" required>
+            </div>
+            <div class="form-group custom-form-group">
+                <label for="year">Release Year:</label>
+                <input id="year" name="year" type="number" required>
+            </div>
+            <div class="form-group custom-form-group">
+                <label for="director">Director:</label>
+                <input id="director" name="director" type="text" required>
+            </div>
+            <div class="form-group custom-form-group">
+                <label for="genre">Genre:</label>
+                <input id="genre" name="genre" type="text" required>
+            </div>
+            <div class="form-group custom-form-group">
+                <label for="starName">Star Name:</label>
+                <input id="starName" name="starName" type="text" required>
+            </div>
+            <input type="submit" value="Add Movie">
+            <p id="movie-success-message" class="success-message"></p>
+            <p id="movie-error-message" class="error-message"></p>
+        </form>
+    </div>
+</div>
+<div class="container-fluid mt-4">
+  <p class="login-title">Table Metadata</p>
+  <div id="metadata-container" class="row">
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

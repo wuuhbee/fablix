@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Payment Info</title>
+</head>
+<body>
+<div class="payment-body">
+    <div class="payment-container">
+        <div class="payment-header">
+            <p class="payment-title">Payment Information</p>
+            <p id="total-price" class="payment-subtitle"></p>
+        </div>
+        <div></div>
+        <form id="paymentForm" name="paymentForm" method="post">
+            <div class="form-group custom-form-group">
+                <label for="firstName"><b>First Name:</b></label>
+                <input id="firstName" name="firstName" type="text" required>
+            </div>
+            <div class="form-group custom-form-group">
+                <label for="lastName"><b>Last Name:</b></label>
+                <input id="lastName" name="lastName" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="creditCardNum"><b>Credit Card Number:</b></label>
+                <input id="creditCardNum" name="creditCardNum" type="number" pattern="\d*" inputmode="numeric" required>
+            </div>
+            <div class="form-group">
+                <label for="expDate"><b>Exp. Date:</b></label>
+                <input id="expDate" name="expDate" type="date" required>
+            </div>
+            <p id="payment-error-message" class="error-message"></p>
+            <div class="text-center mt-4">
+                <input type="submit" value="Place Order" class="custom-submit-btn">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="payment.js"></script>
+</body>
+</html>
